@@ -1,33 +1,52 @@
 {
   "expo": {
-    "name": "buyer",
-    "slug": "buyer",
+    "name": "Buyer",
+    "slug": "Buyer",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/favicon.png",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "image": "./assets/splashscreen.png",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notifications.png",
+          "color": "#ff4500",
+          "androidCollapsedTitle": "buyer"
+        }
+      ]
+    ],
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyBbzt5t9rg2kCEIBPn8_OGW1Y50tHGJ6sk"
+      },
+      "bundleIdentifier": "com.maazkhansw.buyer"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/favicon.png",
         "backgroundColor": "#FFFFFF"
+      },
+      "useNextNotificationsApi": true,
+      "package": "com.maazkhansw.buyer",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBbzt5t9rg2kCEIBPn8_OGW1Y50tHGJ6sk"
+        }
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Advance e-commerce platform empowered by computer vision and augmented reality"
   }
 }
