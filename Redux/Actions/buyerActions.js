@@ -166,7 +166,7 @@ export const clearOrder = (order) => (dispatch) => {
 };
 
 export const postOrder = (data) => async (dispatch) => {
-  console.log(data)
+  console.log("POST ORDER",data)
   let user = await AsyncStorage.getItem("persist:auth");
   let token = JSON.parse(user).token;
   fetch(`${url}/${data.buyerID}/order`, {
@@ -183,6 +183,8 @@ export const postOrder = (data) => async (dispatch) => {
     }),
   })
     .then((response) => {
+      console.log("PPPPPPPPPPPPPPPPPpp")
+      console.log(response)
       if (response.status === 200) {
         dispatch({
           type: ORDER_POSTED,
@@ -196,6 +198,7 @@ export const postOrder = (data) => async (dispatch) => {
       }
     })
     .catch((err) => {
+      console.log(err)
       dispatch({
         type: GET_ERRORS,
         payload: err,

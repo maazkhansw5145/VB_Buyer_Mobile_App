@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Buyer",
-    "slug": "Buyer",
+    "name": "Virtual Bazaar",
+    "slug": "VirtualBazaar",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/favicon.png",
@@ -16,7 +16,7 @@
         {
           "icon": "./assets/notifications.png",
           "color": "#ff4500",
-          "androidCollapsedTitle": "buyer"
+          "androidCollapsedTitle": "Virtual Bazaar"
         }
       ]
     ],
@@ -29,7 +29,7 @@
       "config": {
         "googleMapsApiKey": "AIzaSyBbzt5t9rg2kCEIBPn8_OGW1Y50tHGJ6sk"
       },
-      "bundleIdentifier": "com.maazkhansw.buyer"
+      "bundleIdentifier": "com.maazkhansw.VirtualBazaar"
     },
     "android": {
       "adaptiveIcon": {
@@ -37,7 +37,7 @@
         "backgroundColor": "#FFFFFF"
       },
       "useNextNotificationsApi": true,
-      "package": "com.maazkhansw.buyer",
+      "package": "com.maazkhansw.VirtualBazaar",
       "config": {
         "googleMaps": {
           "apiKey": "AIzaSyBbzt5t9rg2kCEIBPn8_OGW1Y50tHGJ6sk"

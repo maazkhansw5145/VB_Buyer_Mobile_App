@@ -122,10 +122,12 @@ export default function buyerReducer(state = initialState, action) {
       };
     case INCREASE_QUANTITY:
       const NewOrder = state.order.map((order) =>
-        order.item._id === action.payload && order.quantity < 9
+      order.item._id === action.payload && order.quantity < 9
           ? { ...order, quantity: order.quantity + 1 }
           : order
       );
+      console.log(state.order)
+      console.log(NewOrder)
       return {
         ...state,
         order: NewOrder,
